@@ -13,7 +13,7 @@ public abstract class Personnage {
 	private Metiers metier;
 	private Equipement equipement;
 	
-	public Personnage(String nom, Race race, Metiers metier){
+	public Personnage(String nom){
 		this.Ptv=100;
 		this.Pta=30;
 		this.Ptd=15;
@@ -24,22 +24,45 @@ public abstract class Personnage {
 		this.Vitesse=Vitesse;
 		this.Resistance= Resistance;
 		this.Magie=Magie;
+		this.race= race;
+		this.metier=metier;
 	
 	}
+
 
 	public String getNom() {
 		return nom;
 	}
 
-	public void setNom(String nom) {
-		this.nom = nom;
+	public String setNom() {
+		return this.nom = nom;
 	}
+
+	public int getVitesse() {
+		return Vitesse;
+	}
+
+
+	public void setVitesse(int vitesse) {
+		Vitesse = vitesse;
+	}
+
+
+	public int getResistance() {
+		return Resistance;
+	}
+
+
+	public void setResistance(int resistance) {
+		Resistance = resistance;
+	}
+
 
 	public Race getRace() {
 		return race;
 	}
 
-	public void setRace(Race race) {
+	public void setRace() {
 		this.race = race;
 	}
 
@@ -47,7 +70,7 @@ public abstract class Personnage {
 		return metier;
 	}
 
-	public void setMetier(Metiers metier) {
+	public void setMetier() {
 		this.metier = metier;
 	}
 
@@ -55,7 +78,7 @@ public abstract class Personnage {
 		return equipement;
 	}
 
-	public void setEquipement(Equipement equipement) {
+	public void setEquipement() {
 		this.equipement = equipement;
 	}
 
