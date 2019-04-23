@@ -17,11 +17,18 @@ public class PersonnageFactory {
 		case "Orc":
 			people = new Orc(people.setNom());
 			break;
-		
+
 			default:
 				throw new IllegalArgumentException("pas ce type de personnage dans la Liste");
 
 		}
+		//get cordonner 
+		//npc avec son avancer 
+       //get cordonner zone 
+		//get xp
+		//get metier 
+		//quetes: nom, status : non commencer fait ou fini
+		//games liste dee tous les personnages
 		people.getPta();
 		people.getPtb();
 		people.getPtd();

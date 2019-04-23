@@ -1,6 +1,6 @@
 package Projetfilrouge;
 
-public enum Metiers {
+public enum Metiers  {
 	Marge,
 	Geurrier,
 	Magistrat,

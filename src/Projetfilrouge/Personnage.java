@@ -10,7 +10,7 @@ public abstract class Personnage {
 	private int Magie;
 	private int Resistance;
 	private  Race race;
-	private Metiers metier;
+	protected Metiers metier;
 	private Equipement equipement;
 	
 	public Personnage(String nom){
